@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+div{
+    background: #ccc;
+    padding: 5px;
+}
+
+.header, .header-sm{
+    width: 100%;
+    padding: 20px;
+    background: #fcc;
+}
+.header-sm {
+    display: none;
+}
+.header div, .header-sm .row div{
+    height: 40px;
+}
+.header .logo{
+    background: #cfc;
+}
+.header .banner{
+    background: #ccf;
+}
+.header .feedback{
+    background: #ffc;
+}
+.header-sm .logo-sm{
+    background: #cfc;
+}
+.header-sm .title-sm{
+    background: #ffc;
+}
+.header-sm .banner-sm{
+    background: #ccf;
+}
+.search-box{
+    position: sticky;
+    position: -webkit-sticky; /* Safari */
+    top: 0;
+    z-index: 1000;
+    background: #cff;
+    padding: 20px 10%;
+    height: 80px;
+}
+.search-box .search{
+    background: #ddf;
+    height: 40px;
+}
+.main-container{
+    padding: 20px 5% 0;
+    background: #dfd;
+}
+.content-box .nav{
+    background: #edc;
+    height: 2000px;
+}
+.content-box .content{
+    background: #eee;
+    height: 3000px;
+}
+.recommend-box div{
+    height: 40px;
+}
+.recommend-box .recd1{
+    background: #def;
+}
+.recommend-box .recd2{
+    background: #cde;
+}
+.recommend-box .recd3{
+    background: #def;
+}
+.recommend-box .recd4{
+    background: #cde;
+}
+.footer{
+    width: 100%;
+    font-size: 13px;
+    background: #abc;
+    color: #555;
+}
+/* 自定义布局 */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px){
+    .header{
+        display: none;
+    }
+    .header-sm{
+        display: block;
+    }
+    .content-box .nav{
+        height: 100px;
+    }
+    .content-box .nav, .content-box .content{
+        width: 100%;
+    }
+    .recommend-box .recd3, .recommend-box .recd4{
+        display: none;
+    }
+}
